@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/drawable-mdpi/fengexian.xml" value="0.16" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/drawable-mdpi/shadow.xml" value="0.16" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/drawable-mdpi/xiafenggexian.xml" value="0.16" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/drawable-mdpi/youfenggexian.xml" value="0.16" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/drawable/fengexian.xml" value="0.16" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/drawable/fenggexian.xml" value="0.16" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/drawable/round.xml" value="0.2265" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/drawable/shadow.xml" value="0.1065" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/drawable/shangxiafenggexian.xml" value="0.16" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/layout/activity_shequhuodong.xml" value="0.264" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/layout/background.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/layout/flipper.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/layout/game.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/layout/index.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/layout/level.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/layout/searchframe.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/layout/shequhuodong.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/layout/viewflipper.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/12453/Desktop/MyMainActivity/app/src/main/res/xml/vewflipper.xml" value="0.20652173913043478" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

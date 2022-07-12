@@ -1,0 +1,941 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:background="#F3EDED">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="270dp"
+            android:background="@drawable/home_jushang">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1078dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edittext"
+                        android:layout_width="225dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="72dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="9dp"
+                        android:background="@drawable/round"
+                        android:hint="请输入搜索内容"
+                        android:maxLength="100"
+                        android:paddingLeft="15dp"
+                        android:singleLine="true"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginBottom="9dp"
+                        android:background="@drawable/home_voice" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ViewFlipper
+            android:id="@+id/flipper"
+            android:layout_width="350dp"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:flipInterval="6000"
+            android:layout_below="@+id/back"
+            android:layout_marginTop="-150dp"
+            android:inAnimation="@anim/left_in"
+            android:outAnimation="@anim/right_out"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_g1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_g2"/>
+
+        </ViewFlipper>
+
+        <ImageView
+            android:layout_width="340dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="-205dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/back"
+            android:background="@drawable/home_hengfu">
+
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/lan1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="375dp"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+
+                    android:id="@+id/p1"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/home_shequhuodong"
+                    android:layout_gravity="center">
+
+                </ImageButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+
+                    android:id="@+id/p2"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/home_zuixinggonggao"
+                    android:layout_gravity="center">
+
+                </ImageButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+
+                    android:id="@+id/p3"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/home_xinxingzhapian"
+                    android:layout_gravity="center">
+
+                </ImageButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+
+                    android:id="@+id/p4"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/home_kuaisujubao"
+                    android:layout_gravity="center">
+
+                </ImageButton>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lan2"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="485dp"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+
+                    android:id="@+id/p5"
+                    android:layout_width="60dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/home_querweima"
+                    android:layout_gravity="center">
+
+                </ImageButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+
+                    android:id="@+id/p6"
+                    android:layout_width="60dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/home_dianhuajilu"
+                    android:layout_gravity="center">
+
+                </ImageButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+
+                    android:id="@+id/p7"
+                    android:layout_width="60dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/home_falvbaozhang"
+                    android:layout_gravity="center">
+
+                </ImageButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+
+                    android:id="@+id/p8"
+                    android:layout_width="60dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/home_dingshizhadan"
+                    android:layout_gravity="center">
+
+                </ImageButton>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="615dp"
+            android:background="@drawable/home_hengfu2"
+            >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="274dp"
+            android:layout_marginTop="695dp"
+            android:weightSum="2">
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="170dp"
+                    android:layout_height="274dp"
+                    android:background="@drawable/home_zuobiankuangbeijing"
+                    android:layout_gravity="center">
+
+                </ImageView>
+
+                <ViewFlipper
+                    android:id="@+id/gun2"
+                    android:layout_width="144dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="-225dp"
+                    android:flipInterval="6000"
+                    android:inAnimation="@anim/left_in"
+                    android:outAnimation="@anim/right_out"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/home_g1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/home_g2" />
+
+                </ViewFlipper>
+
+                <ViewFlipper
+
+                    android:id="@+id/gun3"
+                    android:layout_width="144dp"
+                    android:layout_height="100dp"
+                    android:flipInterval="6000"
+                    android:layout_marginTop="10dp"
+                    android:inAnimation="@anim/left_in"
+                    android:outAnimation="@anim/right_out"
+                    android:layout_gravity="center">
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/home_g1" />
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/home_g2" />
+
+                </ViewFlipper>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="170dp"
+                    android:layout_height="274dp"
+                    android:background="@drawable/home_youbiankuangbeijing"
+                    android:layout_gravity="center">
+
+                </ImageView>
+
+                <ImageView
+
+                    android:layout_width="148dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="-227dp"
+                    android:background="@drawable/home_guanfangzhengce"
+                    android:layout_gravity="center">
+
+                </ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+
+            android:id="@+id/shequditu"
+            android:layout_width="360dp"
+            android:layout_height="288dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1010dp"
+            android:background="@drawable/home_shequditu">
+
+        </ImageView>
+
+        <ImageView
+
+            android:layout_width="325dp"
+            android:layout_height="210dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1068dp"
+            android:background="@drawable/home_ditu">
+
+        </ImageView>
+
+        <ImageView
+
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="1330dp"
+            android:background="@drawable/home_zuixinxinwen">
+
+        </ImageView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="1400dp"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_xinwen1">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:text="安倍晋三的一生：他如何改变了日本？"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/home_jishubeijing"
+                    android:layout_centerVertical="true">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="152dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/home_zuozhe">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="149dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="王立洲"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="182dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/home_shijian">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="178dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="2022/7/11"
+                    android:textSize="16dp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="1650dp"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="4">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:text="安倍晋三的一生：他如何改变了日本？"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/home_jishubeijing"
+                    android:layout_centerVertical="true">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="152dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/home_zuozhe">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="149dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="王立洲"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="182dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/home_shijian">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="178dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="2022/7/11"
+                    android:textSize="16dp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_xinwen1"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="1900dp"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_xinwen1">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="安倍晋三的一生：他如何改变了日本？"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/home_jishubeijing"
+                    android:layout_centerVertical="true">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="152dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/home_zuozhe">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="149dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="王立洲"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="182dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/home_shijian">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="178dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="2022/7/11"
+                    android:textSize="16dp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="2150dp"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="4">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:text="安倍晋三的一生：他如何改变了日本？"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/home_jishubeijing"
+                    android:layout_centerVertical="true">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="152dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/home_zuozhe">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="149dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="王立洲"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="182dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/home_shijian">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="178dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="2022/7/11"
+                    android:textSize="16dp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_xinwen1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="2400dp"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_xinwen1">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="安倍晋三的一生：他如何改变了日本？"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/home_jishubeijing"
+                    android:layout_centerVertical="true">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="152dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/home_zuozhe">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="149dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="王立洲"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="182dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/home_shijian">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="178dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="2022/7/11"
+                    android:textSize="16dp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="2650dp"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="4">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:text="安倍晋三的一生：他如何改变了日本？"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/home_jishubeijing"
+                    android:layout_centerVertical="true">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="152dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/home_zuozhe">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="149dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="王立洲"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="182dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/home_shijian">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="178dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="2022/7/11"
+                    android:textSize="16dp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_xinwen1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
